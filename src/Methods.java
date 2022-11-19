@@ -1,7 +1,6 @@
 public class Methods {
 
-    public static int getLeapYear(int leapYear) {
-        int year = 2022;
+    public static int getLeapYear(int year) {
         if (year % 4 == 0 && year % 400 != 0 || year % 400 == 0) {
             System.out.println(year + " год високосный");
         } else {
@@ -11,7 +10,7 @@ public class Methods {
     }
 
     public static void main(String[] args) {
-        int year = 0;
+        int year = 2002;
         getLeapYear(year);
     }
 }
